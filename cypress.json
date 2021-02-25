@@ -1,0 +1,123 @@
+{
+  "baseUrl": "https://bookclub.cloud.sunshine/",
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "testFiles": [
+    "Test Install.js",
+    "*.js"
+  ],
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "env": {
+    "db": {
+      "host": "bookclub.cloud.sunshine",
+      "user": "bookclub",
+      "password": "bookclub",
+      "database": "bookclub",
+      "multipleStatements": true
+    },
+    "email": {
+      "snmp": {
+        "host": "sunshine.dyndns.myonlineportal.de",
+        "port": 465
+      },
+      "imap": {
+        "host": "sunshine.dyndns.myonlineportal.de",
+        "port": 993,
+        "tls": true
+      },
+      "listserver": "listserver@bookclub.cloud.sunshine",
+      "listserver-password": "ls-password"
+    },
+    "tables": {
+      "authors": "wp_bc_authors",
+      "books": "wp_bc_books",
+      "events": "wp_bc_events",
+      "groupmembers": "wp_bc_groupmembers",
+      "members": "wp_bc_members",
+      "options": "wp_options",
+      "participants": "wp_bc_participants",
+      "rsvps": "wp_bc_rsvps",
+      "users": "wp_users",
+      "usermeta": "wp_usermeta"
+    },
+    "pages": {
+      "book": "book",
+      "forthcoming": "future",
+      "previous": "previous",
+      "rsvp": "rsvp",
+      "signup": "sign-up"
+    },
+    "users": {
+      "admin": {
+        "login": "jonnj",
+        "password": "bookclub-test"
+      },
+      "adminonly": {
+        "name": "Adam Zappa",
+        "login": "adamz",
+        "role": "administrator",
+        "password": "az-password",
+        "email": "az@bookclub.cloud.sunshine"
+      },
+      "useronly": {
+        "name": "Beatrice Young",
+        "login": "beaty",
+        "role": "subscriber",
+        "password": "by-password",
+        "email": "by@bookclub.cloud.sunshine"
+      },
+      "adminuser": {
+        "name": "Christine Xavier",
+        "login": "chrisx",
+        "role": "administrator",
+        "member": 1,
+        "password": "cx-password",
+        "webkey": "53567F1BF61711BF",
+        "email": "cx@bookclub.cloud.sunshine"
+      },
+      "nonadminuser": {
+        "name": "Denis Williams",
+        "login": "denisw",
+        "role": "subscriber",
+        "member": 2,
+        "password": "dw-password",
+        "webkey": "1B5E20DDB400DB58",
+        "email": "dw@bookclub.cloud.sunshine"
+      },
+      "member_g2": {
+        "name": "Edward Vasco",
+        "member": 3,
+        "password": "ev-password",
+        "webkey": "BA53D39F23EE8713",
+        "email": "ev@bookclub.cloud.sunshine"
+      },
+      "member_g1": {
+        "name": "Florence Unger",
+        "member": 4,
+        "password": "fu-password",
+        "webkey": "9B2337C8E99B6990",
+        "email": "fu@bookclub.cloud.sunshine"
+      },
+      "user_all": {
+        "name": "Gary Thomas",
+        "login": "garth",
+        "role": "subscriber",
+        "member": 5,
+        "password": "gt-password",
+        "webkey": "2F77E4A24FD5220A",
+        "email": "gt@bookclub.cloud.sunshine"
+      },
+      "support": {
+        "name": "bookclub",
+        "email": "bookclub@bookclub.cloud.sunshine",
+        "password": "bc-password"
+      }
+    },
+    "scripts": {
+      "bookclub": "scripts/bookclub.sql"
+    }
+  }
+}
