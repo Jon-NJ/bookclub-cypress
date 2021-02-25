@@ -1,0 +1,11 @@
+/package-lock.json
+/node_modules
+/cypress/fixtures/example.json
+/cypress/integration/examples
+/cypress/integration/TestTest.js
+/cypress/reports
+/cypress/results
+/cypress/screenshots
+/cypress/videos
+/cypress-run.log
+/test

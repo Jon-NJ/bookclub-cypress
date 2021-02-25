@@ -1,0 +1,31 @@
+Version 0.2.25 2021-02-25
+- New test sets "Author Tests", "Book Tests" and "Profile Tests".
+- Improved documentation, ensure "Test Install" runs first.
+- Note that this version depends on a non-commited changes in the plugin for the forwarder.
+
+Version 0.2.24 2021-02-24
+- New test set "RSVP Tests".
+
+Version 0.2.18 2021-02-18
+- Test set "EMail Forwarding" is now complete. But it is still a bit unstable.
+
+Version 0.2.16 2021-02-16
+- Test set "Test Install" activates the plugin and imports master data if necessary.
+- Test set "EMail Forwarding" tests various scenarios for email forwarding.
+  This test set is still minimal, but the necessary libraries are working.
+
+Version 0.2.11 2021-02-11
+- Generate reports using mochawesome. See https://przemuh.pl/en/blog/3-steps-to-awesome-test-reports-with-cypress/
+- A few minor changes for logging in/out.
+
+Version 0.2.7 2021-02-07
+- Initial commit.
+  - Project skeleton, environment and master data in cypress.json.
+  - Several utility commands based on similar procedures in the QFS library.
+  - Plugins:
+    - bookclub_db.js - A wrapper for actions specific to the bookclub database.
+    - database.js - Runs in Node, performs database actions.
+    - navigate.js - A wrapper for generating links and navigating to specific pages.
+    - storage.js - A utility package for storing results for later use.
+  - Test Sets.
+    - SignUp Tests - Test Cases for various scenarios when signing up.
