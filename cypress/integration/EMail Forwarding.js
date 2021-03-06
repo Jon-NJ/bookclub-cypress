@@ -67,7 +67,7 @@ describe('EMail Forwarding', () => {
         fetchemail(adamz, 3000)
             .then((val) => {
                 return cy.wrap(val.mail.text);
-            }).should('contain', "The forwarder may only be used if you activate 'Receive email from others' on your bookclub profile page.");
+            }).should('contain', "The forwarder may only be used if you activate 'Participate in group email' on your bookclub profile page.");
 
         cy.TestStep('Check no target bounce');
         forwarder.sendemail(chrisx, null, {

@@ -23,7 +23,7 @@ function message_should_be(text) {
 }
 
 function click_and_check(test) {
-  cy.get('#create').click();
+  cy.get('#button_create').click();
   return message_should_be(test);
 }
 

@@ -1,3 +1,7 @@
+Version 0.3.6 2021-03-06
+- Adjustments to match changes in the plugin.
+- Handle occasional "verify email" dialog after login.
+
 Version 0.2.25 2021-02-25
 - New test sets "Author Tests", "Book Tests" and "Profile Tests".
 - Improved documentation, ensure "Test Install" runs first.

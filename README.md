@@ -26,9 +26,9 @@ A WordPress site should already be installed with certain users. There is also a
     * 1 jonnj - Administrator *bookclub-test* 
     * 2 adamz Adam Zappa - Administrator *az-password* az@bookcub.cloud.sunshine
     * 3 beaty Beatrice Young - Subscriber *by-password* by@bookcub.cloud.sunshine
-    * 4 chrisx Christine Xavier - Administrator *cy-password* cx@bookcub.cloud.sunshine
+    * 4 chrisx Christine Xavier - Administrator *cx-password* cx@bookcub.cloud.sunshine
     * 5 denisw Denis Williams - Subscriber *dw-password* dw@bookcub.cloud.sunshine
-    * 6 garth Gary Thoms - Subscriber *gt-password* gt@bookcub.cloud.sunshine
+    * 6 garth Gary Thomas - Subscriber *gt-password* gt@bookcub.cloud.sunshine
   * Each of these users is also configured for an email account with the IMAP/SMTP server at sunshine.dyndns.myonlineportal.de.
   * Additional email accounts:
     * bookclub@bookclub.cloud.sunshine *bc-password*

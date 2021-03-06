@@ -80,6 +80,16 @@ const login = (loginname, password, remember = false) => {
         cy.get('#rememberme').click();
     }
     cy.get('#wp-submit').click();
+    cy.document()
+    .then((doc) => {
+        let $doc = Cypress.$(doc);
+        let $button = $doc.find('#correct-admin-email');
+        if ($button.length > 0) {
+            cy.log('Landed on email verification page');
+            cy.get('#correct-admin-email').click();
+        }
+        return null;
+    });
     cy.get('#wpadminbar').should('exist');
 };
 
